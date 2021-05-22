@@ -1,4 +1,4 @@
-package com.example.testcompos
+package com.example.testcompose
 
 import org.junit.Test
 
