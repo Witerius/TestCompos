@@ -3,7 +3,7 @@ package com.example.testcompose.ui.di
 import com.example.testcompose.domain.repositories.TestAppRepository
 import com.example.testcompose.domain.repositories.TestAppRepositoryImpl
 import com.example.testcompose.domain.usecases.TestAppUseCase
-import com.example.testcompose.ui.pages.main.MainViewModel
+import com.example.testcompose.ui.pages.home.HomeViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
@@ -16,5 +16,5 @@ val useCase = module {
 }
 
 val viewModule = module {
-    viewModel { MainViewModel(get()) }
+    viewModel { HomeViewModel(get()) }
 }

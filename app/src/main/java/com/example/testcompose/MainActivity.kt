@@ -8,6 +8,7 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.testcompose.ui.pages.home.HomeScreen
 import com.example.testcompose.ui.theme.TestComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -17,13 +18,16 @@ class MainActivity : ComponentActivity() {
             TestComposeTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
-                    Greeting("Android")
+//                    Greeting("Android")
+                    HomeScreen()
+
                 }
             }
         }
     }
 }
 
+/*
 @Composable
 fun Greeting(name: String) {
     Text(text = "Hello $name!")
@@ -35,4 +39,4 @@ fun DefaultPreview() {
     TestComposeTheme {
         Greeting("Android")
     }
-}
+}*/
